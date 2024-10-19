@@ -55,17 +55,10 @@ To run the download and upload metadata operations, you can use the provided com
 
 ```sh
 python3 -m src.upload_metadata src/test_data/A1
-python3 -m src.download_metadata 2024-01-01 2024-01-31 src/test_data/A2
+python3 -m src.download_metadata 2024-01-01 2024-12-31 src/test_data/A2
 ```
 
 This script will download metadata from the provided URL and upload it to Elasticsearch.
-
-Run tests to check the functionality:
-
-```sh
-python3 -m unittest tests.test_download_metadata
-python3 -m unittest tests.test_upload_metadata
-```
 
 
 ## How to Create a Dashboard and Visualize Data with Kibana
@@ -95,4 +88,3 @@ python3 -m unittest tests.test_upload_metadata
 ![Kibana Dashboard](kibana1.png)
 
 ![Kibana Interaction](kibana2.png)
-# elasticsearch-pipeline
